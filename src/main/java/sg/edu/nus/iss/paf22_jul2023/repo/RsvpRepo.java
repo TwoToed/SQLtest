@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import org.thymeleaf.exceptions.TemplateAssertionException;
 
 import sg.edu.nus.iss.paf22_jul2023.model.RSVP;
 
@@ -58,6 +57,6 @@ public class RsvpRepo {
 
     // write a function for batchInsert
     // refer to slide 17 of day22
-    
+
 
 }

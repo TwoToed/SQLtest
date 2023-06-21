@@ -32,7 +32,7 @@ public class RsvpRepo {
 
     public List<RSVP> findAll() {
         List<RSVP> rsvps = new ArrayList<>();
-        rsvps = template.queryForList(findAllSQL, RSVP.class);
+        rsvps = template.query(findAllSQL, BeanPropertyRowMapper.newInstance(RSVP.class));
         return rsvps;
     }
 
